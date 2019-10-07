@@ -168,7 +168,7 @@ const WeChatPanel = ({ className }: StyledProps): React.ReactElement => {
                     setMessages([
                         ..._messages.map(m => ({
                             ...m,
-                            status: m.status ? m.status : MessageStatus.read,
+                            status: typeof m.status !== 'undefined' ? m.status : MessageStatus.read,
                         })),
                         ...addedMessages,
                     ]);

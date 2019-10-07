@@ -62,6 +62,7 @@ function EmojiRain({ emoji }: { emoji: string }) {
     };
     const queueKey = animationQueue.get(emoji);
     if (endCount >= emojis.length || (queueKey && queueKey !== renderKey)) {
+        animationQueue.delete(emoji);
         return null;
     }
 

@@ -9,16 +9,16 @@ interface StyledProps {
     className?: string;
 }
 export enum Role {
-    sender,
-    recevier,
-    system
+    sender = 'sender',
+    recevier = 'recevier',
+    system = 'system'
 }
 
 export enum MessageStatus {
-    loading,
-    sent,
-    failed,
-    read
+    loading = 'loading',
+    sent = 'sent',
+    failed = 'failed',
+    read = 'read'
 }
 
 export interface IAuthor {
