@@ -22,5 +22,5 @@ module.exports = withTypescript({
         });
         return config;
     },
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/{reponame}' : '',
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/wechat-message-react/out' : '',
 })
